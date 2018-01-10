@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  lab_2_ams
+
+  Created by r on 10/01/2018.
+  Copyright © 2018 r. All rights reserved.
+*/
+"nav-title" = "Shoutbox";
+"button-text" = "Add";
+"cell-title-text" = "minutes ago";
+"cell-subtitle-text" = "says:";
+
+"new-message-title" = "New message";
+"new-message-subtitle" = "Please state your name and message";
+"name-placeholder" = "Your name";
+"message-placeholder" = "Your message";
+"cancel-button-text" = "Cancel";
+"send-button-text" = "Send";

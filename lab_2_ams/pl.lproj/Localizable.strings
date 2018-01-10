@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  lab_2_ams
+
+  Created by r on 10/01/2018.
+  Copyright © 2018 r. All rights reserved.
+*/
+"nav-title" = "Wiadomosci";
+"button-text" = "Dodaj";
+"cell-title-text" = "minut temu";
+"cell-subtitle-text" = "powiedzial:";
+
+"new-message-title" = "Nowa wiadomosc";
+"new-message-subtitle" = "Wprowadz imie i wiadomosc";
+"name-placeholder" = "Twoje imie";
+"message-placeholder" = "Twoja wiadomosc";
+"cancel-button-text" = "Anuluj";
+"send-button-text" = "Wyslij";
+
+

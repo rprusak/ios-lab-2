@@ -55,6 +55,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="composeButton" destination="BEX-pl-LAv" id="PPZ-cZ-VMK"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="svS-cy-dso" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

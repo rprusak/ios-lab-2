@@ -1,0 +1,12 @@
+
+/* Class = "UIBarButtonItem"; title = "Compose"; ObjectID = "BEX-pl-LAv"; */
+"BEX-pl-LAv.title" = "Compose";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "KHf-z9-3D3"; */
+"KHf-z9-3D3.text" = "Subtitle";
+
+/* Class = "UINavigationItem"; title = "Shoutbox"; ObjectID = "M62-al-wjy"; */
+"M62-al-wjy.title" = "Shoutbox";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "dtN-zy-pGN"; */
+"dtN-zy-pGN.text" = "Title";

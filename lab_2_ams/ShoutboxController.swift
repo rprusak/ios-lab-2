@@ -20,7 +20,12 @@ class ShoutboxController: UITableViewController {
     
     var values: Array<Message> = []
     
+    @IBOutlet weak var composeButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
+        self.navigationItem.title = NSLocalizedString("nav-title", comment: "Navigation Title");
+        self.composeButton.title = NSLocalizedString("button-text", comment: "Button text");
+        
         super.viewDidLoad()
         self.loadData()
         
@@ -58,20 +63,20 @@ class ShoutboxController: UITableViewController {
     }
     
     @IBAction func onComposeButtonCliecked(_ sender: UIBarButtonItem) {
-        let alertController = UIAlertController(title: "New message", message: "Please state your name and message", preferredStyle: .alert)
+        let alertController = UIAlertController(title: NSLocalizedString("new-message-title", comment: "New message title"), message: NSLocalizedString("new-message-subtitle", comment: "New message subtitle"), preferredStyle: .alert)
         alertController.addTextField(configurationHandler: { textField in
-            textField.placeholder = "Your name"
+            textField.placeholder = NSLocalizedString("name-placeholder", comment: "Name placeholder")
         } )
         alertController.addTextField(configurationHandler: { textField in
-            textField.placeholder = "Your message"
+            textField.placeholder = NSLocalizedString("message-placeholder", comment: "Message placeholder")
         } )
-        let sendAction = UIAlertAction(title: "Send", style: .default, handler: { action in
+        let sendAction = UIAlertAction(title: NSLocalizedString("send-button-text", comment: "Send button text"), style: .default, handler: { action in
             let name = alertController.textFields?[0].text
             let message = alertController.textFields?[1].text
             self.addNewMessage(name: name!, message: message!)
         })
         alertController.addAction(sendAction)
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in })
+        let cancelAction = UIAlertAction(title: NSLocalizedString("cancel-button-text", comment: "Cancel button text"), style: .cancel, handler: { _ in })
         alertController.addAction(cancelAction)
         self.present(alertController, animated: true)
     }
@@ -106,8 +111,8 @@ class ShoutboxController: UITableViewController {
         
         let d = Date()
         
-        cell.textLabel?.text = "\(d.minutes(from: self.values[indexPath.row].timestamp)) minutes ago"
-        cell.detailTextLabel?.text = "\(self.values[indexPath.row].name) says: \(self.values[indexPath.row].message)"
+        cell.textLabel?.text = "\(d.minutes(from: self.values[indexPath.row].timestamp)) " + NSLocalizedString("cell-title-text", comment: "Cell title text");
+        cell.detailTextLabel?.text = "\(self.values[indexPath.row].name) " + NSLocalizedString("cell-subtitle-text", comment: "Cell subtitle text") + " \(self.values[indexPath.row].message)"
 
         return cell
     }
